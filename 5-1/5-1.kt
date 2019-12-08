@@ -7,6 +7,11 @@ enum class Operation(val value: Int, val parameters: Int){
     MULTIPLICATION(2, 3)
 }
 
+enum class Mode(val value: Int) {
+    POSITION(0),
+    IMMEDIATE(1)
+}
+
 fun main(args: Array<String>) {
     val fileName = System.getProperty("user.dir") + "\\input.txt"
     val inputStream: InputStream = File(fileName).inputStream()
